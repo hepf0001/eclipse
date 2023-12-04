@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Baggrundsfarve */
+body{
+    background-color: #FDFDFD;
+}
+
+
+/* Overskrifter */
+h1{
+    font-family: 'Libre Bodoni', serif;
+}
+
+h2{
+    font-family: 'Libre Bodoni', serif; 
+}
+
+h3{
+    font-family: 'Libre Bodoni', serif;   
+}
+
+
+
+/* Brødtekst */
+p{
+    font-family: 'Palanquin', sans-serif;
+}
