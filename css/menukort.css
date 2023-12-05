@@ -68,3 +68,11 @@ td :last-child {
   flex: 1 0 500px;
   padding: 20px;
 }
+
+#bestil {
+  padding: 2px 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f1f1f1;
+}
