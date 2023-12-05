@@ -1,0 +1,24 @@
+#top_H3 {
+  background-color: #7cb250;
+  display: block;
+  width: 100%;
+  padding: 10px 10px 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+}
+
+tr :last-child {
+  background-color: #dddddd;
+}
+tr :first-child {
+  width: 90%;
+  height: 23px;
+}
