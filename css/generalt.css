@@ -77,14 +77,8 @@ main {
 }
 
 /******************** Overskrifter ********************/
-h1 {
-  font-family: "Libre Bodoni", serif;
-}
-
-h2 {
-  font-family: "Libre Bodoni", serif;
-}
-
+h1,
+h2,
 h3 {
   font-family: "Libre Bodoni", serif;
 }
@@ -92,4 +86,21 @@ h3 {
 /******************* Brødtekst ********************/
 p {
   font-family: "Palanquin", sans-serif;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 30px;
+  padding-bottom: 50px;
+}
+
+.footer_container {
+  flex: 1 0 300px;
+  padding: 10px 30px;
+  text-align: center;
+}
+
+.footer_container h2 {
+  padding: 25px 0 5px 0;
 }
