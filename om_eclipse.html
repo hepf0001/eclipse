@@ -53,8 +53,24 @@
               <div class="a-b3"></div>
             </div>
           </div>
+
+          <div class="nav-m">
+            <label for="radio1" class="m-btn"></label>
+            <label for="radio2" class="m-btn"></label>
+            <label for="radio3" class="m-btn"></label>
+          </div>
         </div>
       </section>
+      <script type="text/javascript">
+        var counter = 1;
+        setInterval(function () {
+          document.getElementById("radio" + counter).checked = true;
+          counter++;
+          if (counter > 3) {
+            counter = 1;
+          }
+        }, 5000);
+      </script>
     </main>
     <footer></footer>
   </body>
