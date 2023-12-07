@@ -104,3 +104,26 @@ footer {
 .footer_container h2 {
   padding: 25px 0 5px 0;
 }
+
+.some_item_list {
+  display: flex;
+  justify-content: center;
+}
+
+.fa-regular,
+.fa-brands {
+  border: rgb(61, 61, 61) 4px solid;
+  padding: 7px;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+a :hover {
+  background-color: #7cb250;
+}
+
+.fa-yelp,
+.fa-square-instagram,
+.fa-square-facebook {
+  padding: 7px 11px;
+}
