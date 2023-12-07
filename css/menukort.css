@@ -136,3 +136,21 @@ td :last-child {
   grid-row: 2/4;
   box-shadow: 13px 14px 0px 1px rgba(180, 180, 180, 0.4);
 }
+
+#favorit_col {
+  padding-bottom: 30px;
+}
+
+#dressing_col {
+  text-align: center;
+}
+
+#dressing_col h2 {
+  padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
