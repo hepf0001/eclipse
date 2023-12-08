@@ -60,13 +60,13 @@
             <input type="radio" name="radio-btn" id="radio3" />
 
             <div class="st first">
-              <img src="img/om1.webp" alt="Billede" />
+              <img src="img/om1._croppedwebp.webp" alt="Billede" />
             </div>
             <div class="st">
-              <img src="img/om1.webp" alt="Billede" />
+              <img src="img/om1._croppedwebp.webp" alt="Billede" />
             </div>
             <div class="st">
-              <img src="img/om1.webp" alt="Billede" />
+              <img src="img/om1._croppedwebp.webp" alt="Billede" />
             </div>
 
             <div class="nav-auto">
@@ -86,17 +86,23 @@
 
       <script type="text/javascript">
         var counter = 1;
-        setInterval(function () {
-          document.getElementById("radio" + counter).checked = true;
+        document.getElementById("radio" + counter).checked = true;
+
+        setInterval(skiftForHelvede, 5000);
+
+        function skiftForHelvede() {
+          // "";
           counter++;
+          document.getElementById("radio" + counter).checked = true;
+
           if (counter > 3) {
-            counter = 1;
+            counter = 0;
           }
-        }, 5000);
+        }
       </script>
 
-      <div id="vi_anbefaler">
-        <div class="container2">
+      <div id="om_os">
+        <div class="container1">
           <div class="box1">
             <img src="img/400x400.svg" alt="placeholder" />
           </div>
@@ -106,7 +112,7 @@
           </div>
         </div>
 
-        <div class="container1">
+        <div class="container2">
           <h1 class="h1">Om os</h1>
 
           <p class="p_luft">
@@ -142,36 +148,42 @@
         allowfullscreen
       ></iframe>
 
-      <div>
-        <div class="vision">
-          <h1 class="h1">Vision</h1>
-          <p>
-            Hos Eclipse går vi meget op i rene råvarer! Vi håndplukker selv
-            friske råvarer direkte hos vores leverandører, så du altid er får en
-            høj kvalitet og en velsmagende oplevelse, når du sætter tænderne i
-            vores produkter.
-          </p>
+      <div class="vision_1">
+        <div class="vision_test">
+          <div class="vision">
+            <h1 class="h1">Vision</h1>
+            <p>
+              Hos Eclipse går vi meget op i rene råvarer! Vi håndplukker selv
+              friske råvarer direkte hos vores leverandører, så du altid er får
+              en høj kvalitet og en velsmagende oplevelse, når du sætter
+              tænderne i vores produkter.
+            </p>
+          </div>
+          <div class="vision">
+            <h1 class="h1">Mission</h1>
+            <p>
+              Eclipse skal være førstevalget, når du ønsker at sætte tænderne i
+              en sund sandwich eller salat.
+            </p>
+          </div>
+          <div class="vision">
+            <h1 class="h1">Vores mål</h1>
+            <p class="p_luft">
+              Det er vores mål at sikre, at du altid kan finde en sund og
+              velsmagende sandwich eller salat, som passer til din smag.
+            </p>
+            <p>
+              Derfor vil vores menukort altid indeholde en bred variation af
+              smagsoplevelser, uanset om du er til salt, surt, sødt eller stærkt
+              eller det hele.
+            </p>
+          </div>
+          <i class="fa-solid fa-heart fa-2x"></i>
         </div>
-        <div class="vision">
-          <h1 class="h1">Mission</h1>
-          <p>
-            Eclipse skal være førstevalget, når du ønsker at sætte tænderne i en
-            sund sandwich eller salat.
-          </p>
+        <div>
+          <img class="vision_billede" src="img/400x400.svg" alt="" />
+          <img class="vision_billede" src="img/400x400.svg" alt="" />
         </div>
-        <div class="vision">
-          <h1 class="h1">Vores mål</h1>
-          <p class="p_luft">
-            Det er vores mål at sikre, at du altid kan finde en sund og
-            velsmagende sandwich eller salat, som passer til din smag.
-          </p>
-          <p>
-            Derfor vil vores menukort altid indeholde en bred variation af
-            smagsoplevelser, uanset om du er til salt, surt, sødt eller stærkt
-            eller det hele.
-          </p>
-        </div>
-        <i class="fa-solid fa-heart fa-2x"></i>
       </div>
     </main>
     <footer>
