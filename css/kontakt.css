@@ -1,0 +1,19 @@
+#kontakt_info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.container1,
+.container2 {
+  flex: 1 0 300px;
+  padding: 50px;
+}
+
+.container1 {
+  text-align: center;
+}
+
+.container1 h2 {
+  padding: 10px 0;
+}
