@@ -111,6 +111,9 @@ td :last-child {
   border-top: #7cb250 solid 15px;
   border-bottom: #7cb250 solid 15px;
   margin: 150px 0;
+
+  right: 0px;
+  left: 0px;
 }
 
 .container1,
