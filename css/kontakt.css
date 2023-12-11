@@ -71,10 +71,36 @@ input {
   padding: 3px;
   margin: 4px;
   width: 100%;
+  border: none;
 }
 #top_H3 {
   background-color: #7cb250;
   display: block;
   width: 100%;
   padding: 10px 10px 10px;
+}
+.message {
+  height: 80px;
+}
+#bestil_knap {
+  padding: 2px 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  flex: 1 0 500px;
+  background-color: #e7e8e6;
+  color: #7cb250;
+  font-weight: bolder;
+}
+
+#bestil_knap {
+  display: flex;
+  justify-content: center;
+  padding: 10px 50%;
+}
+
+#bestil_knap :hover {
+  background-color: #7cb250;
+  color: white;
+  cursor: pointer;
 }
