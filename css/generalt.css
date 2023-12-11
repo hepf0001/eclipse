@@ -118,14 +118,25 @@ footer {
 
 .fa-regular,
 .fa-brands {
-  border: rgb(61, 61, 61) 4px solid;
   padding: 7px;
   border-radius: 5px;
   background: #f1f1f1;
 }
 
-a :hover {
-  background-color: #7cb250;
+.instagram a :hover {
+  background-color: #d62977;
+}
+
+.facebook a :hover {
+  background-color: #4c69b5;
+}
+
+.yelp a :hover {
+  background-color: rgb(234, 54, 54);
+}
+
+.mail a :hover {
+  background-color: rgb(139, 180, 255);
 }
 
 .fa-yelp,
