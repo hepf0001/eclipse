@@ -110,7 +110,7 @@ font-family: 'Palanquin', sans-serif;
     position: absolute;
   }
 
-  nav ul {
+  ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
