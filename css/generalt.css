@@ -28,13 +28,6 @@ font-family: 'Palanquin', sans-serif;
 
 /******************** menu ********************/
 
-header {
-  background-color: #f1f1f1;
-  padding: 15px 0;
-  position: sticky;
-  top: 0;
-}
-
 @media (max-width: 800px) {
   #menu_toggle {
     opacity: 0;
@@ -110,12 +103,27 @@ header {
     opacity: 0;
   }
 
-  ul {
+  .hamburger-menu label {
+    position: absolute;
+  }
+  .hamburger-menu input {
+    position: absolute;
+  }
+
+  nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px 0;
   }
+}
+
+header {
+  background-color: #f1f1f1;
+  position: sticky;
+  padding: 10px 0;
+  top: 0;
 }
 
 #logo a {
