@@ -139,6 +139,10 @@ footer {
   background-color: rgb(139, 180, 255);
 }
 
+#kontrol_rapport a :hover {
+  background-color: rgb(230, 255, 191);
+}
+
 .fa-yelp,
 .fa-square-instagram,
 .fa-square-facebook {
