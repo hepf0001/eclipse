@@ -9,10 +9,23 @@ img {
   height: auto;
   display: block;
 }
+
 .container {
   display: flex;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+  flex-wrap: wrap;
+  padding: 50px 0 100px 0;
 }
+#kontakt {
+  padding: 150px 0;
+  flex: 1 0 500px;
+  text-align: center;
+}
+
+#billede {
+  padding: 20px;
+  flex: 1 0 500px;
+}
+/*
 #billede {
   width: 60%;
   padding-top: 100px;
@@ -26,8 +39,10 @@ img {
   display: flex;
   grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
 }
+*/
 form {
   padding-left: 160px;
+  width: 100%;
 }
 
 #skriv {
@@ -55,6 +70,7 @@ input {
   /*border: solid rgb(227, 22, 56);*/
   padding: 3px;
   margin: 4px;
+  width: 100%;
 }
 #top_H3 {
   background-color: #7cb250;
