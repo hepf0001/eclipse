@@ -242,6 +242,9 @@ footer {
 .fa-square-facebook {
   padding: 7px 11px;
 }
+#kontrol_rapport a :hover {
+  background-color: rgb(230, 255, 191);
+}
 
 @media (max-width: 600px) {
   .some_item_list {

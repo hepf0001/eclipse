@@ -80,7 +80,7 @@ input {
   padding: 3px;
   margin: 4px;
   width: 100%;
-  border: none;
+  border: solid #7cb250;
 }
 
 #top_H3 {
