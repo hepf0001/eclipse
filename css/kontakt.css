@@ -44,3 +44,6 @@ p {
 form :nth-child(15) {
   width: 100%;
 }
+form :action {
+  padding: 10px;
+}
