@@ -27,7 +27,7 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
 }
 form {
-  padding-left: 30%;
+  padding-left: 160px;
 }
 
 #skriv {
@@ -42,21 +42,22 @@ form :nth-child(15) {
   width: 100%;
 }
 #kontakt_form {
-  padding-left: 250px;
+  padding-top: 10px;
   padding-bottom: 20px;
-  border: solid black;
+  display: flex;
+  flex-wrap: wrap;
 }
 label {
-  border: solid royalblue;
+  /*border: solid royalblue;*/
   font-weight: bold;
 }
 input {
-  border: solid rgb(227, 22, 56);
+  /*border: solid rgb(227, 22, 56);*/
   padding: 3px;
   margin: 4px;
 }
 #top_H3 {
-  background-color: #7cb250;
+  /*background-color: #7cb250;*/
   display: block;
   width: 100%;
   padding: 10px 10px 10px;
