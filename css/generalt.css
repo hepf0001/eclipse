@@ -147,7 +147,7 @@ li :hover {
 }
 
 .aktiv :hover {
-  color: black;
+  color: rgb(46, 46, 46);
 }
 
 .aktiv a {
@@ -157,7 +157,7 @@ li :hover {
 /******************** Baggrundsfarve ********************/
 
 body {
-  background-color: #f1f1f1;
+  background-color: #fafafa;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -177,15 +177,19 @@ main {
 }
 
 /******************** Overskrifter ********************/
+
 h1,
 h2,
 h3 {
   font-family: "Libre Bodoni", serif;
+  color: rgb(46, 46, 46);
 }
 
 /******************* Brødtekst ********************/
 p {
   font-family: "Palanquin", sans-serif;
+  color: rgb(46, 46, 46);
+  font-size: 17px;
 }
 
 footer {
@@ -196,7 +200,7 @@ footer {
 }
 
 .footer_container {
-  flex: 1 0 300px;
+  flex: 1 0 200px;
   padding: 10px 30px;
   text-align: center;
 }
@@ -241,4 +245,15 @@ footer {
 .fa-square-instagram,
 .fa-square-facebook {
   padding: 7px 11px;
+}
+
+@media (max-width: 600px) {
+  .some_item_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    padding: 0;
+    margin: 0;
+  }
 }
