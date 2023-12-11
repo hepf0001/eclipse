@@ -62,6 +62,7 @@ img {
 
 #text_kontakt {
   flex: 1 0 250px;
+  padding: 20px;
 }
 
 #kontakt_form {
