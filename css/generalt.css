@@ -222,23 +222,19 @@ footer {
 }
 
 .instagram a :hover {
-  background-color: #d62977;
+  background-color: #f98bbc;
 }
 
 .facebook a :hover {
-  background-color: #4c69b5;
+  background-color: #839ee3;
 }
 
 .yelp a :hover {
-  background-color: rgb(234, 54, 54);
+  background-color: #f66775;
 }
 
 .mail a :hover {
-  background-color: rgb(139, 180, 255);
-}
-
-#kontrol_rapport a :hover {
-  background-color: rgb(230, 255, 191);
+  background-color: rgb(201, 214, 239);
 }
 
 .fa-yelp,
