@@ -1,213 +1,226 @@
 <!DOCTYPE html>
 <html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Om Eclipse</title>
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="css/generalt.css" />
+    <link rel="stylesheet" href="css/om_eclipse.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Om Eclipse</title>
-  <meta name="robots" content="noindex" />
-  <link rel="stylesheet" href="css/generalt.css" />
-  <link rel="stylesheet" href="css/om_eclipse.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;600&family=Palanquin:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a6a9ce4355.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="img/logo.svg" />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;600&family=Palanquin:wght@300;600&display=swap"
-    rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/a6a9ce4355.js" crossorigin="anonymous"></script>
-  <link rel="icon" href="img/logo.svg" />
-</head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="menukort.html">Menukort</a></li>
+          <li id="logo"><a href="index.html">Eclipse sandwich</a></li>
+          <li class="aktiv"><a href="om_eclipse.html">Om Eclipse</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h3 id="top_H3_om">Om Eclipse</h3>
+    <main>
+      <section class="section">
+        <div class="slider">
+          <div class="slide">
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
 
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Forside</a></li>
-        <li><a href="menukort.html">Menukort</a></li>
-        <li id="logo"><a href="index.html">Eclipse sandwich</a></li>
-        <li class="aktiv"><a href="om_eclipse.html">Om Eclipse</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-      </ul>
-    </nav>
-  </header>
-  <h3 id="top_H3_om">Om Eclipse</h3>
-  <main>
-    <section class="section">
-      <div class="slider">
-        <div class="slide">
-          <input type="radio" name="radio-btn" id="radio1" />
-          <input type="radio" name="radio-btn" id="radio2" />
-          <input type="radio" name="radio-btn" id="radio3" />
+            <div class="st first">
+              <img src="img/om1_croppedwebp.webp" alt="Billede" />
+            </div>
+            <div class="st">
+              <img src="img/om1_croppedwebp.webp" alt="Billede" />
+            </div>
+            <div class="st">
+              <img src="img/om1_croppedwebp.webp" alt="Billede" />
+            </div>
 
-          <div class="st first">
-            <img src="img/om1._croppedwebp.webp" alt="Billede" />
+            <div class="nav-auto">
+              <div class="a-b1"></div>
+              <div class="a-b2"></div>
+              <div class="a-b3"></div>
+            </div>
           </div>
-          <div class="st">
-            <img src="img/om1._croppedwebp.webp" alt="Billede" />
-          </div>
-          <div class="st">
-            <img src="img/om1._croppedwebp.webp" alt="Billede" />
-          </div>
 
-          <div class="nav-auto">
-            <div class="a-b1"></div>
-            <div class="a-b2"></div>
-            <div class="a-b3"></div>
+          <div class="nav-m">
+            <label for="radio1" class="m-btn"></label>
+            <label for="radio2" class="m-btn"></label>
+            <label for="radio3" class="m-btn"></label>
           </div>
         </div>
+      </section>
 
-        <div class="nav-m">
-          <label for="radio1" class="m-btn"></label>
-          <label for="radio2" class="m-btn"></label>
-          <label for="radio3" class="m-btn"></label>
-        </div>
-      </div>
-    </section>
-
-    <script type="text/javascript">
-      var counter = 1;
-      document.getElementById("radio" + counter).checked = true;
-
-      setInterval(skiftForHelvede, 5000);
-
-      function skiftForHelvede() {
-        //"";
-        counter++;
+      <script type="text/javascript">
+        var counter = 1;
         document.getElementById("radio" + counter).checked = true;
 
-        if (counter > 3) {
-          counter = 0;
+        setInterval(skiftForHelvede, 1000);
+
+        function skiftForHelvede() {
+          counter++;
+          document.getElementById("radio" + counter).checked = true;
+
+          if (counter > 3) {
+            counter = 1;
+          }
         }
-      }
-    </script>
+      </script>
 
-    <div id="om_os">
-      <div class="container1">
-        <div class="box1">
-          <img src="img/400x400.svg" alt="placeholder" />
+      <div id="om_os">
+        <div class="container1">
+          <div class="box1">
+            <img src="img/" alt="placeholder" />
+          </div>
+
+          <div class="box2">
+            <img src="img/400x400.svg" alt="placeholder" />
+          </div>
         </div>
 
-        <div class="box2">
-          <img src="img/400x400.svg" alt="placeholder" />
-        </div>
-      </div>
+        <div class="container2">
+          <h1 class="h1">Om os</h1>
 
-      <div class="container2">
-        <h1 class="h1">Om os</h1>
-
-        <p class="p_luft">
-          Eclipse er en lille hyggelig sandwichbar beliggende på Amager. Vi
-          har i mange år været kendt for vores altid velsmagende sandwich, men
-          vi kan mere end det. I de senere år har vi udvidet vores menukort,
-          så vi også kan tilbyde nachos, salater og forskellige power- og
-          frugtshakes.
-        </p>
-        <p>
-          Vi gør meget ud af, at du altid får en velsmagende og frisk sandwich
-          hos os. Derfor gør vi os også meget umage med at vælge de bedste og
-          reneste råvarer til formålet. Vi bager selv vores brød, udvælger
-          selv frugt og grønt hos vores leverandør og vi laver vores egne
-          dressinger. Med andre ord – vi gør os umage! Umage for at du skal få
-          den bedste oplevelse, når du bestiller mad fra os – hvad enten det
-          er for at stille den lille sult på en hurtig, sund og nem måde i en
-          travl hverdag, om det er for at kunne servere et sundt og
-          velsmagende måltid til dit arrangement eller hvis du ønsker at få en
-          frokostordning hos os, som kan sikre dig og dine medarbejder et
-          sundt og velsmagende frokostmåltid hver dag.
-        </p>
-      </div>
-    </div>
-
-    <video controls autoplay loop src="video/clpssndwch_45sek.mp4"></video>
-
-    <div class="vision_1">
-      <div class="vision_test">
-        <div class="vision">
-          <h1 class="h1">Vision</h1>
-          <p>
-            Hos Eclipse går vi meget op i rene råvarer! Vi håndplukker selv
-            friske råvarer direkte hos vores leverandører, så du altid er får
-            en høj kvalitet og en velsmagende oplevelse, når du sætter
-            tænderne i vores produkter.
-          </p>
-        </div>
-        <div class="vision">
-          <h1 class="h1">Mission</h1>
-          <p>
-            Eclipse skal være førstevalget, når du ønsker at sætte tænderne i
-            en sund sandwich eller salat.
-          </p>
-        </div>
-        <div class="vision">
-          <h1 class="h1">Vores mål</h1>
           <p class="p_luft">
-            Det er vores mål at sikre, at du altid kan finde en sund og
-            velsmagende sandwich eller salat, som passer til din smag.
+            Eclipse er en lille hyggelig sandwichbar beliggende på Amager. Vi
+            har i mange år været kendt for vores altid velsmagende sandwich, men
+            vi kan mere end det. I de senere år har vi udvidet vores menukort,
+            så vi også kan tilbyde nachos, salater og forskellige power- og
+            frugtshakes.
           </p>
           <p>
-            Derfor vil vores menukort altid indeholde en bred variation af
-            smagsoplevelser, uanset om du er til salt, surt, sødt eller stærkt
-            eller det hele.
+            Vi gør meget ud af, at du altid får en velsmagende og frisk sandwich
+            hos os. Derfor gør vi os også meget umage med at vælge de bedste og
+            reneste råvarer til formålet. Vi bager selv vores brød, udvælger
+            selv frugt og grønt hos vores leverandør og vi laver vores egne
+            dressinger. Med andre ord – vi gør os umage! Umage for at du skal få
+            den bedste oplevelse, når du bestiller mad fra os – hvad enten det
+            er for at stille den lille sult på en hurtig, sund og nem måde i en
+            travl hverdag, om det er for at kunne servere et sundt og
+            velsmagende måltid til dit arrangement eller hvis du ønsker at få en
+            frokostordning hos os, som kan sikre dig og dine medarbejder et
+            sundt og velsmagende frokostmåltid hver dag.
           </p>
         </div>
-        <i class="fa-solid fa-heart fa-2x"></i>
-      </div>
-      <div>
-        <img class="vision_billede" src="img/400x400.svg" alt="" />
-        <img class="vision_billede" src="img/400x400.svg" alt="" />
-      </div>
-    </div>
-  </main>
-  <footer>
-    <div class="footer_container">
-      <div id="lokalition">
-        <h2>Lokalition</h2>
-        <p>Søren Norbys Allé 2 2300 Kbh. S</p>
-        <p>(+45) 32 55 00 10</p>
-        <p>eclipsesandwich@gmail.com</p>
       </div>
 
-      <div id="aabningstider">
-        <h2>Åbningstider</h2>
-        <p>Man-Fre 10:30-21:00</p>
-        <p>Lør-Søn 11:00-19:00</p>
-      </div>
-    </div>
+      <video controls loop src="video/clpssndwch_45sek.mp4"></video>
 
-    <div class="footer_container">
-      <div id="find_os">
-        <h2>Følg os på vores SoMe</h2>
-        <div class="some_item_list">
-          <div class="some_item mail">
-            <a href="https://www.facebook.com/EclipseSandwichbar/?fref=ts" target="_blank"><i
-                class="fa-regular fa-envelope fa-2x"></i></a>
+      <div class="vision_1">
+        <div class="vision_test">
+          <div class="vision">
+            <h1 class="h1">Vision</h1>
+            <p>
+              Hos Eclipse går vi meget op i rene råvarer! Vi håndplukker selv
+              friske råvarer direkte hos vores leverandører, så du altid er får
+              en høj kvalitet og en velsmagende oplevelse, når du sætter
+              tænderne i vores produkter.
+            </p>
           </div>
-
-          <div class="some_item facebook">
-            <a href="https://www.facebook.com/EclipseSandwichbar/?fref=ts" target="_blank"><i
-                class="fa-brands fa-square-facebook fa-2x"></i></a>
+          <div class="vision">
+            <h1 class="h1">Mission</h1>
+            <p>
+              Eclipse skal være førstevalget, når du ønsker at sætte tænderne i
+              en sund sandwich eller salat.
+            </p>
           </div>
-
-          <div class="some_item instagram">
-            <a href="https://www.instagram.com/eclipsecopenhagen/" target="_blank"><i
-                class="fa-brands fa-square-instagram fa-2x"></i></a>
+          <div class="vision">
+            <h1 class="h1">Vores mål</h1>
+            <p class="p_luft">
+              Det er vores mål at sikre, at du altid kan finde en sund og
+              velsmagende sandwich eller salat, som passer til din smag.
+            </p>
+            <p>
+              Derfor vil vores menukort altid indeholde en bred variation af
+              smagsoplevelser, uanset om du er til salt, surt, sødt eller stærkt
+              eller det hele.
+            </p>
           </div>
+          <i class="fa-solid fa-heart fa-2x"></i>
+        </div>
+        <div>
+          <img class="vision_billede" src="img/400x400.svg" alt="" />
+          <img class="vision_billede" src="img/400x400.svg" alt="" />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer_container">
+        <div id="lokalition">
+          <h2>Lokalition</h2>
+          <p>Søren Norbys Allé 2 2300 Kbh. S</p>
+          <p>(+45) 32 55 00 10</p>
+          <p>eclipsesandwich@gmail.com</p>
+        </div>
 
-          <div class="some_item yelp">
-            <a href="https://www.yelp.com/biz/eclipse-sandwich-og-bagel-k%C3%B8benhavn" target="_blank"><i
-                class="fa-brands fa-yelp fa-2x"></i></a>
+        <div id="aabningstider">
+          <h2>Åbningstider</h2>
+          <p>Man-Fre 10:30-21:00</p>
+          <p>Lør-Søn 11:00-19:00</p>
+        </div>
+      </div>
+
+      <div class="footer_container">
+        <div id="find_os">
+          <h2>Følg os på vores SoMe</h2>
+          <div class="some_item_list">
+            <div class="some_item mail">
+              <a
+                href="https://www.facebook.com/EclipseSandwichbar/?fref=ts"
+                target="_blank"
+                ><i class="fa-regular fa-envelope fa-2x"></i
+              ></a>
+            </div>
+
+            <div class="some_item facebook">
+              <a
+                href="https://www.facebook.com/EclipseSandwichbar/?fref=ts"
+                target="_blank"
+                ><i class="fa-brands fa-square-facebook fa-2x"></i
+              ></a>
+            </div>
+
+            <div class="some_item instagram">
+              <a
+                href="https://www.instagram.com/eclipsecopenhagen/"
+                target="_blank"
+                ><i class="fa-brands fa-square-instagram fa-2x"></i
+              ></a>
+            </div>
+
+            <div class="some_item yelp">
+              <a
+                href="https://www.yelp.com/biz/eclipse-sandwich-og-bagel-k%C3%B8benhavn"
+                target="_blank"
+                ><i class="fa-brands fa-yelp fa-2x"></i
+              ></a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="footer_container">
-      <div id="kontrol_rapport">
-        <h2>kontrol rapport</h2>
-        <a href="https://www.findsmiley.dk/570006">Smiley :-)</a>
+      <div class="footer_container">
+        <div id="kontrol_rapport">
+          <h2>kontrol rapport</h2>
+          <a href="https://www.findsmiley.dk/570006">Smiley :-)</a>
+        </div>
       </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
