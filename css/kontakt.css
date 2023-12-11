@@ -116,3 +116,22 @@ input {
   color: white;
   cursor: pointer;
 }
+.instagram a :hover {
+  background-color: #f98bbc;
+}
+
+.facebook a :hover {
+  background-color: #839ee3;
+}
+
+.yelp a :hover {
+  background-color: #f66775;
+}
+
+.mail a :hover {
+  background-color: rgb(201, 214, 239);
+}
+
+#kontrol_rapport a :hover {
+  background-color: rgb(230, 255, 191);
+}
