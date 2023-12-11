@@ -20,16 +20,24 @@
 
 <body>
   <header>
-    <nav>
+    <div class="hamburger-menu">
+      <input id="menu_toggle" type="checkbox">
+      <label class="menu_knap" for="menu_toggle">
+        <span></span>
+      </label>
+
+
       <ul>
-        <li><a href="index.html">Forside</a></li>
-        <li><a href="menukort.html">Menukort</a></li>
+        <li> <a href="index.html">Forside</a></li>
+        <li></li> <a href="menukort.html">Menukort</a></li>
         <li id="logo"><a href="index.html">Eclipse sandwich</a></li>
-        <li><a href="om_eclipse.html">Om Eclipse</a></li>
-        <li class="aktiv"><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="om_eclipse.html">Om Eclipse</a> </li>
+        <li class="aktiv" <a href="kontakt.html">Kontakt</a></li>
       </ul>
-    </nav>
+
+    </div>
   </header>
+
 
 
   <h3 id="top_H3">Kontakt</h3>
@@ -73,6 +81,17 @@
 
 
     <div id="kontakt_form">
+      <div id="text_kontakt">
+        <h2>
+          For større bestillinger:
+        </h2>
+        <p>
+          kontakter os gerne her, så vender vi tilbage snarets muligt.
+        </p>
+        <p>
+          M.v.h Eclipse
+        </p>
+      </div>
 
 
       <form action="">
@@ -88,10 +107,9 @@
         <i class="fa-solid fa-pen"></i>
         <label for="text">Message:</label><br>
         <input type="Besked" id="Message" name="fname"><br>
-
-
         <input type="submit" value="Submit">
       </form>
+
 
 
     </div>
