@@ -1,14 +1,13 @@
-#top_H3_om {
-    background-color: #7cb250;
-    display: block;
-    width: 100%;
-    padding: 10px 10px 10px;
-  }
-
+#top_H3 {
+  padding: 20px 10px 20px;
+  background-color: #7cb250;
+  display: block;
+  width: 100%;
+}
 
 /*************** Billede slider **************/
 
-header{
+header {
   z-index: 1;
 }
 /*body{
@@ -17,7 +16,7 @@ justify-self: center;
 align-items: center;
 }*/
 
-.section{
+.section {
   /*height: 100vh;*/
   padding-top: 20px;
   display: flex;
@@ -25,34 +24,34 @@ align-items: center;
   align-items: center;
 }
 
-.slider{
+.slider {
   width: 800px;
   height: 500px;
   /*border-radius: 10px;*/
   overflow: hidden;
 }
 
-.slide{
+.slide {
   width: 500%;
   height: 500px;
   display: flex;
 }
 
-.slide input{
+.slide input {
   display: none;
 }
 
-.st{
+.st {
   width: 20%;
   transition: 1s;
 }
 
-.st img{
+.st img {
   width: 800px;
   height: 500px;
 }
 
-.nav-m{
+.nav-m {
   position: absolute;
   width: 800px;
   margin-top: -40px;
@@ -60,7 +59,7 @@ align-items: center;
   display: flex;
 }
 
-.m-btn{
+.m-btn {
   border: 2px solid #ffc32b;
   padding: 5px;
   border-radius: 10px;
@@ -68,27 +67,27 @@ align-items: center;
   transition: 1s;
 }
 
-.m-btn:not(:last-child){
+.m-btn:not(:last-child) {
   margin-right: 30px;
 }
 
-.m-btn:hover{
+.m-btn:hover {
   background-color: #ffc32b;
 }
 
-#radio1:checked ~.first{
+#radio1:checked ~ .first {
   margin-left: 0;
 }
 
-#radio2:checked ~.first{
+#radio2:checked ~ .first {
   margin-left: -20%;
 }
 
-#radio3:checked ~.first{
+#radio3:checked ~ .first {
   margin-left: -40%;
 }
 
-.nav-auto{
+.nav-auto {
   position: absolute;
   width: 800px;
   margin-top: 460px;
@@ -96,93 +95,87 @@ align-items: center;
   justify-content: center;
 }
 
-.nav-auto div{
+.nav-auto div {
   border: 2px solid #ffc32b;
   padding: 5px;
   border-radius: 10px;
   transition: 1s;
 }
 
-.nav-auto div:not(:last-child){
+.nav-auto div:not(:last-child) {
   margin-right: 30px;
   justify-content: center;
 }
 
-#radio1:checked ~ .nav-auto .a-b1{
+#radio1:checked ~ .nav-auto .a-b1 {
   background-color: #ffc32b;
 }
 
-#radio2:checked ~ .nav-auto .a-b2{
+#radio2:checked ~ .nav-auto .a-b2 {
   background-color: #ffc32b;
 }
 
-#radio3:checked ~ .nav-auto .a-b3{
+#radio3:checked ~ .nav-auto .a-b3 {
   background-color: #ffc32b;
 }
-
 
 /******************* Om os *****************/
-
-#om_os {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 50px 30px;
-  width: 100%;
-  margin: 100px 0;
-}
-
-.container1,
-.container2 {
-  flex: 1 0 500px;
-  padding: 0 30px;
-}
-
 .container1 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
+
+  max-width: 100%;
 }
 
-.box1 {
-  grid-column: 1/3;
-  grid-row: 1/3;
-  box-shadow: 13px 14px 0px 1px rgba(180, 180, 180, 0.4);
+.container2 {
+  max-width: 100%;
 }
 
+.box1,
 .box2 {
-  grid-column: 2/4;
-  grid-row: 2/4;
-  box-shadow: 13px 14px 0px 1px rgba(180, 180, 180, 0.4);
+  /*max-width: 100%;*/
+  padding: 20px 0;
 }
-
 
 /**************** Luft *******************/
 
-.p_luft{
+.p_luft {
   padding-bottom: 20px;
 }
 
-.vision{
+.vision {
   padding-bottom: 40px;
 }
 
-.h1{
-  padding-bottom: 10px; 
+.h1 {
+  padding-bottom: 10px;
 }
 
-.vision_1{
-  padding-bottom: 40px;
+.vision_1 {
+  padding-bottom: 100px;
   padding-top: 100px;
 }
 
-  /*************** Video ***************/
-  iframe {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-  }
+.container2 {
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
 
-  	
+.vision_billede {
+  padding: 20px 0;
+}
+
+.container2 {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.vision_test {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+/*************** Video ***************/
 img,
 video {
   width: 100%;
@@ -190,26 +183,90 @@ video {
   display: block;
 }
 
-@media (min-width:850px){
 /***************** Vision *******************/
-.vision_1{
-  display: grid;
-  place-items: center;
-  /*height: 100vh;*/
-  grid-template-columns: 1fr 1fr;
-  gap: 10px; 
+.center_hjerte {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
 }
 
-.vision_test{
-  grid-column: 1/2;
-  height: 100%;
-}
+@media (min-width: 850px) {
+  /***************** Vision *******************/
+  .vision_1 {
+    display: grid;
+    place-items: center;
+    /*height: 100vh;*/
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
 
-.vision_billede {
-  width: 300px; 
-  height: auto; 
-  padding-bottom: 20px;
-}
+  .vision_test {
+    grid-column: 1/2;
+    height: 100%;
+  }
 
-}
+  .vision_billede {
+    width: 300px;
+    height: auto;
+    padding-bottom: 20px;
+  }
 
+  /******************* Om os *****************/
+  #om_os {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 30px;
+    width: 100%;
+    margin: 100px 0;
+  }
+
+  .container1 {
+    order: -1;
+  }
+
+  .container1,
+  .container2 {
+    flex: 1 0 500px;
+    padding: 0 30px;
+  }
+
+  .container1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .box1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+
+  .box2 {
+    grid-column: 2/4;
+    grid-row: 2/4;
+  }
+
+  .box1 img,
+  .box2 img {
+    box-shadow: 13px 14px 5px 1px rgba(180, 180, 180, 0.4);
+  }
+
+  /*************** Overskrift *****************/
+  #top_H3_om {
+    padding: 10px 10px 10px;
+    background-color: #7cb250;
+    display: block;
+    width: 100%;
+  }
+
+  /*************** Luft **********************/
+  .container2 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .vision_test {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

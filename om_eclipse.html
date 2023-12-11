@@ -23,7 +23,12 @@
 
   <body>
     <header>
-      <nav>
+      <div class="hamburger-menu">
+        <input id="menu_toggle" type="checkbox" />
+        <label class="menu_knap" for="menu_toggle">
+          <span></span>
+        </label>
+
         <ul>
           <li><a href="index.html">Forside</a></li>
           <li><a href="menukort.html">Menukort</a></li>
@@ -31,7 +36,7 @@
           <li class="aktiv"><a href="om_eclipse.html">Om Eclipse</a></li>
           <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
-      </nav>
+      </div>
     </header>
     <h3 id="top_H3_om">Om Eclipse</h3>
     <main>
@@ -84,16 +89,6 @@
       </script>
 
       <div id="om_os">
-        <div class="container1">
-          <div class="box1">
-            <img src="img/" alt="placeholder" />
-          </div>
-
-          <div class="box2">
-            <img src="img/400x400.svg" alt="placeholder" />
-          </div>
-        </div>
-
         <div class="container2">
           <h1 class="h1">Om os</h1>
 
@@ -117,6 +112,15 @@
             frokostordning hos os, som kan sikre dig og dine medarbejder et
             sundt og velsmagende frokostmåltid hver dag.
           </p>
+        </div>
+        <div class="container1">
+          <div class="box1">
+            <img src="img/kaffe.webp" alt="bagel" />
+          </div>
+
+          <div class="box2">
+            <img src="img/arbejder.webp" alt="arbejder" />
+          </div>
         </div>
       </div>
 
@@ -152,7 +156,9 @@
               eller det hele.
             </p>
           </div>
-          <i class="fa-solid fa-heart fa-2x"></i>
+          <div class="center_hjerte">
+            <i class="fa-solid fa-heart fa-2x"></i>
+          </div>
         </div>
         <div>
           <img class="vision_billede" src="img/400x400.svg" alt="" />
@@ -218,7 +224,12 @@
       <div class="footer_container">
         <div id="kontrol_rapport">
           <h2>kontrol rapport</h2>
-          <a href="https://www.findsmiley.dk/570006">Smiley :-)</a>
+          <a href="https://www.findsmiley.dk/1272264" target="_blank"
+            ><i
+              class="fa-regular fa-face-smile fa-2x"
+              style="color: #74b168"
+            ></i
+          ></a>
         </div>
       </div>
     </footer>
