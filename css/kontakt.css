@@ -17,14 +17,15 @@ img {
 }
 #kontakt {
   padding: 150px 0;
-  flex: 1 0 500px;
+  flex: 1 0 300px;
   text-align: center;
 }
 
 #billede {
   padding: 20px;
-  flex: 1 0 500px;
+  flex: 1 0 300px;
 }
+
 /*
 #billede {
   width: 60%;
@@ -40,22 +41,30 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
 }
 */
-form {
+/* form {
   padding-left: 160px;
   width: 100%;
-}
+} */
 
 #skriv {
   border: solid 7px blue;
   padding: 10px;
 }
 
-p {
-  font-weight: bold;
-}
-form :nth-child(15) {
+/* form :nth-child(15) {
   width: 100%;
+} */
+
+.form1 {
+  padding: 20px;
+  flex: 1 0 250px;
 }
+
+#text_kontakt {
+  flex: 1 0 250px;
+  padding: 20px;
+}
+
 #kontakt_form {
   padding-top: 10px;
   padding-bottom: 20px;
@@ -71,17 +80,20 @@ input {
   padding: 3px;
   margin: 4px;
   width: 100%;
-  border: none;
+  border: solid #7cb250;
 }
+
 #top_H3 {
   background-color: #7cb250;
   display: block;
   width: 100%;
   padding: 10px 10px 10px;
 }
+
 .message {
   height: 80px;
 }
+
 #bestil_knap {
   padding: 2px 10px;
   font-size: 20px;
@@ -103,4 +115,8 @@ input {
   background-color: #7cb250;
   color: white;
   cursor: pointer;
+}
+
+#kontrol_rapport a :hover {
+  background-color: rgb(230, 255, 191);
 }
