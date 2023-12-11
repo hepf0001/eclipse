@@ -116,3 +116,7 @@ input {
   color: white;
   cursor: pointer;
 }
+
+#kontrol_rapport a :hover {
+  background-color: rgb(230, 255, 191);
+}
