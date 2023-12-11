@@ -40,53 +40,14 @@
     </header>
     <h3 id="top_H3_om">Om Eclipse</h3>
     <main>
-      <section class="section">
-        <div class="slider">
-          <div class="slide">
-            <input type="radio" name="radio-btn" id="radio1" />
-            <input type="radio" name="radio-btn" id="radio2" />
-            <input type="radio" name="radio-btn" id="radio3" />
-
-            <div class="st first">
-              <img src="img/om1_croppedwebp.webp" alt="Billede" />
-            </div>
-            <div class="st">
-              <img src="img/om1_croppedwebp.webp" alt="Billede" />
-            </div>
-            <div class="st">
-              <img src="img/om1_croppedwebp.webp" alt="Billede" />
-            </div>
-
-            <div class="nav-auto">
-              <div class="a-b1"></div>
-              <div class="a-b2"></div>
-              <div class="a-b3"></div>
-            </div>
-          </div>
-
-          <div class="nav-m">
-            <label for="radio1" class="m-btn"></label>
-            <label for="radio2" class="m-btn"></label>
-            <label for="radio3" class="m-btn"></label>
-          </div>
-        </div>
-      </section>
-
-      <script type="text/javascript">
-        var counter = 1;
-        document.getElementById("radio" + counter).checked = true;
-
-        setInterval(skiftForHelvede, 1000);
-
-        function skiftForHelvede() {
-          counter++;
-          document.getElementById("radio" + counter).checked = true;
-
-          if (counter > 3) {
-            counter = 1;
-          }
-        }
-      </script>
+      <div id="slidy-container">
+        <figure id="slidy">
+          <img src="img/smoothie.webp" alt="Smoothie" />
+          <img src="img/om1_croppedwebp.webp" alt="Sandwich" />
+          <img src="img/3sndwch_indpak1.webp" alt="Pose" />
+          <img src="img/opbygning.webp" alt="Opbygning af sandwich" />
+        </figure>
+      </div>
 
       <div id="om_os">
         <div class="container2">
@@ -119,7 +80,7 @@
           </div>
 
           <div class="box2">
-            <img src="img/arbejder.webp" alt="arbejder" />
+            <img src="img/om_os.webp" alt="arbejder" />
           </div>
         </div>
       </div>
@@ -161,8 +122,12 @@
           </div>
         </div>
         <div>
-          <img class="vision_billede" src="img/400x400.svg" alt="" />
-          <img class="vision_billede" src="img/400x400.svg" alt="" />
+          <img
+            class="vision_billede"
+            src="img/bagel_og_drikkevare.webp"
+            alt=""
+          />
+          <img class="vision_billede" src="img/salat.webp" alt="" />
         </div>
       </div>
     </main>
@@ -233,5 +198,6 @@
         </div>
       </div>
     </footer>
+    <script src="om.js"></script>
   </body>
 </html>
