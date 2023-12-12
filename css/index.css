@@ -1,5 +1,11 @@
 /*************** Video ***************/
 
+video {
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
 img,
 video {
   width: 100%;
@@ -7,44 +13,21 @@ video {
   display: block;
 }
 
-#top_H3_om {
-  background-color: #7cb250;
-  display: block;
-  width: 100%;
-  padding: 10px 10px 10px;
-}
-
-.st {
-  width: 20%;
-  transition: 1s;
-}
-
-.st img {
-  width: 800px;
-  height: 500px;
-}
-
-video {
-  padding-top: 20px;
-  padding-bottom: 30px;
-}
-
 /******************* Om os *****************/
-.om_os {
-  gap: 50px;
+#om_os {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .container1 {
   display: flex;
   flex-direction: column;
-  max-width: 100%;
-  padding: 0 20px;
+
+  padding: 80px 20px 150px 20px;
 }
 
 .container2 {
-  max-width: 100%;
-  padding: 0 20px;
-  padding-bottom: 50px;
+  padding: 50px 30px 10px 30px;
 }
 
 .box1,
@@ -65,45 +48,27 @@ video {
   padding-bottom: 20px;
 }
 
-.vision {
-  padding-bottom: 40px;
-}
-
 .h1 {
   padding-bottom: 10px;
 }
 
-.vision_1 {
-  padding-bottom: 40px;
-  padding-top: 100px;
-}
-
-/*************** Video ***************/
-
-img,
-video {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 @media (min-width: 850px) {
   /******************* Om os *****************/
+
   #om_os {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     width: 100%;
-    margin: 150px 0;
-  }
-
-  .container1 {
-    order: -1;
+    padding-bottom: 150px;
+    padding-top: 80px;
+    gap: 50px;
   }
 
   .container1,
   .container2 {
-    flex: 1 0 500px;
-    padding: 0 30px;
+    flex: 1 0 250px;
+    padding: 100px 0;
   }
 
   .container1 {

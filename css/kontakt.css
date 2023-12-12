@@ -17,13 +17,13 @@ img {
 }
 #kontakt {
   padding: 50px 0;
-  flex: 1 0 300px;
+  flex: 1 0 250px;
   text-align: center;
 }
 
 #billede {
   padding: 20px;
-  flex: 1 0 300px;
+  flex: 1 0 250px;
 }
 
 /*
@@ -84,13 +84,6 @@ input {
   margin-bottom: 20px;
 }
 
-#top_H3 {
-  background-color: #7cb250;
-  display: block;
-  width: 100%;
-  padding: 10px 10px 10px;
-}
-
 .message {
   height: 80px;
 }
@@ -100,7 +93,7 @@ input {
   font-size: 20px;
   border-radius: 10px;
   border: none;
-  flex: 1 0 500px;
+  flex: 1 0 250px;
   background-color: #e7e8e6;
   color: #7cb250;
   font-weight: bolder;
@@ -120,4 +113,20 @@ input {
 
 #kontrol_rapport a :hover {
   background-color: rgb(230, 255, 191);
+}
+
+#top_H3 {
+  background-color: #7cb250;
+  display: block;
+  width: 100%;
+  padding: 20px 10px 20px;
+}
+
+@media (min-width: 850px) {
+  #top_H3 {
+    background-color: #7cb250;
+    display: block;
+    width: 100%;
+    padding: 10px 10px 10px;
+  }
 }

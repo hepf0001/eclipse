@@ -78,7 +78,7 @@ td :last-child {
 }
 
 .container {
-  flex: 1 0 200px;
+  flex: 1 0 250px;
   padding: 20px;
 }
 
@@ -88,7 +88,7 @@ td :last-child {
 
   border-radius: 10px;
   border: none;
-  flex: 1 0 200px;
+  flex: 1 0 250px;
   background-color: #e7e8e6;
   color: #ff7700;
   font-weight: bolder;
@@ -114,15 +114,12 @@ td :last-child {
   flex-wrap: wrap;
   padding: 50px 30px;
   background-color: #e7e8e6;
-  /* border-top: #7cb250 solid 15px;
-  border: #7cb250 solid 15px; */
-
   margin: 150px 0;
 }
 
 .container1,
 .container2 {
-  flex: 1 0 200px;
+  flex: 1 0 250px;
 }
 
 .container2 {

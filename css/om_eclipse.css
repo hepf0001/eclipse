@@ -1,8 +1,12 @@
-#top_H3 {
+#top_H3_om {
   padding: 20px 10px 20px;
   background-color: #7cb250;
   display: block;
   width: 100%;
+}
+
+.fa-heart {
+  color: #7cb250;
 }
 
 /*************** Billede slider **************/
@@ -134,7 +138,7 @@
 
   .container1,
   .container2 {
-    flex: 1 0 500px;
+    flex: 1 0 250px;
     padding: 0 30px;
   }
 
@@ -161,9 +165,9 @@
 
   /*************** Overskrift *****************/
   #top_H3_om {
-    padding: 10px 10px 10px;
     background-color: #7cb250;
     display: block;
+    padding: 10px 10px 10px;
     width: 100%;
   }
 
