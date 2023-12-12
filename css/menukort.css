@@ -9,14 +9,18 @@ h1 {
   padding: 20px 0;
   text-align: center;
 }
+
 .top_container p {
   padding: 0 30px;
-  font-size: 20px;
 
   font-family: "Palanquin", sans-serif;
 }
 
-/*****tabel*****/
+.top_container {
+  padding: 50px 0;
+}
+
+/***************tabel***************/
 
 table {
   border-collapse: collapse;
@@ -74,16 +78,17 @@ td :last-child {
 }
 
 .container {
-  flex: 1 0 500px;
+  flex: 1 0 300px;
   padding: 20px;
 }
 
 #bestil_knap button {
-  padding: 2px 10px;
+  padding: 5px 10px;
   font-size: 20px;
+
   border-radius: 10px;
   border: none;
-  flex: 1 0 500px;
+  flex: 1 0 300px;
   background-color: #e7e8e6;
   color: #ff7700;
   font-weight: bolder;
@@ -92,7 +97,8 @@ td :last-child {
 #bestil_knap {
   display: flex;
   justify-content: center;
-  padding: 10px 50%;
+  padding: 53px 50%;
+  margin-top: 5px;
 }
 
 #bestil_knap :hover {
@@ -101,7 +107,7 @@ td :last-child {
   cursor: pointer;
 }
 
-/*******************vi anbefalder*****************/
+/************************vi anbefalder**********************/
 
 #vi_anbefaler {
   display: flex;
@@ -117,7 +123,6 @@ td :last-child {
 .container1,
 .container2 {
   flex: 1 0 300px;
-  padding: 0 30px;
 }
 
 .container2 {
@@ -138,7 +143,7 @@ td :last-child {
 
 .box1 img,
 .box2 img {
-  box-shadow: 13px 14px 0px 1px rgba(180, 180, 180, 0.4);
+  box-shadow: 13px 14px 5px 1px #41414163;
 }
 
 #favorit_col {
@@ -152,12 +157,19 @@ td :last-child {
 #dressing_col h2 {
   padding-bottom: 15px;
 }
+@media only screen and (min-width: 600px) {
+  .container1,
+  .container2 {
+    padding: 0 20px;
+  }
+}
 
 @media only screen and (max-width: 600px) {
   .container2 {
     display: flex;
     flex-direction: column;
-
+    padding: 0;
+    margin: 0;
     max-width: 100%;
   }
 
@@ -168,7 +180,11 @@ td :last-child {
   .box1,
   .box2 {
     max-width: 100%;
-    padding: 20px 0;
+    padding: 10px 0;
+  }
+
+  .box1 img,
+  .box2 img {
     box-shadow: none;
   }
 
@@ -178,5 +194,10 @@ td :last-child {
 
   #top_H3 {
     padding: 20px 10px 20px;
+    width: 100%;
+  }
+
+  .fa-heart {
+    padding-bottom: 20px;
   }
 }

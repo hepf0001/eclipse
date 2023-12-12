@@ -147,7 +147,7 @@ li :hover {
 }
 
 .aktiv :hover {
-  color: black;
+  color: rgb(46, 46, 46);
 }
 
 .aktiv a {
@@ -155,6 +155,7 @@ li :hover {
 }
 
 /******************** Baggrundsfarve ********************/
+
 body {
   background-color: #fafafa;
   min-height: 100vh;
@@ -163,7 +164,7 @@ body {
 }
 
 footer {
-  border-top: solid 12px var(--greenfarve-color);
+  /* border-top: solid 12px var(--greenfarve-color); */
   margin-top: auto;
 
   background-color: #ffc32b;
@@ -176,15 +177,19 @@ main {
 }
 
 /******************** Overskrifter ********************/
+
 h1,
 h2,
 h3 {
   font-family: "Libre Bodoni", serif;
+  color: rgb(46, 46, 46);
 }
 
 /******************* Brødtekst ********************/
 p {
   font-family: "Palanquin", sans-serif;
+  color: rgb(46, 46, 46);
+  font-size: 17px;
 }
 
 footer {
@@ -195,7 +200,7 @@ footer {
 }
 
 .footer_container {
-  flex: 1 0 300px;
+  flex: 1 0 200px;
   padding: 10px 30px;
   text-align: center;
 }
@@ -217,27 +222,37 @@ footer {
 }
 
 .instagram a :hover {
-  background-color: #d62977;
+  background-color: #f98bbc;
 }
 
 .facebook a :hover {
-  background-color: #4c69b5;
+  background-color: #839ee3;
 }
 
 .yelp a :hover {
-  background-color: rgb(234, 54, 54);
+  background-color: #f66775;
 }
 
 .mail a :hover {
-  background-color: rgb(139, 180, 255);
-}
-
-#kontrol_rapport a :hover {
-  background-color: rgb(230, 255, 191);
+  background-color: rgb(201, 214, 239);
 }
 
 .fa-yelp,
 .fa-square-instagram,
 .fa-square-facebook {
   padding: 7px 11px;
+}
+#kontrol_rapport a :hover {
+  background-color: rgb(230, 255, 191);
+}
+
+@media (max-width: 600px) {
+  .some_item_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    padding: 0;
+    margin: 0;
+  }
 }

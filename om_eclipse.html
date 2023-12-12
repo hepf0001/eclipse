@@ -23,7 +23,12 @@
 
   <body>
     <header>
-      <nav>
+      <div class="hamburger-menu">
+        <input id="menu_toggle" type="checkbox" />
+        <label class="menu_knap" for="menu_toggle">
+          <span></span>
+        </label>
+
         <ul>
           <li><a href="index.html">Forside</a></li>
           <li><a href="menukort.html">Menukort</a></li>
@@ -31,69 +36,20 @@
           <li class="aktiv"><a href="om_eclipse.html">Om Eclipse</a></li>
           <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
-      </nav>
+      </div>
     </header>
     <h3 id="top_H3_om">Om Eclipse</h3>
     <main>
-      <section class="section">
-        <div class="slider">
-          <div class="slide">
-            <input type="radio" name="radio-btn" id="radio1" />
-            <input type="radio" name="radio-btn" id="radio2" />
-            <input type="radio" name="radio-btn" id="radio3" />
-
-            <div class="st first">
-              <img src="img/om1_croppedwebp.webp" alt="Billede" />
-            </div>
-            <div class="st">
-              <img src="img/om1_croppedwebp.webp" alt="Billede" />
-            </div>
-            <div class="st">
-              <img src="img/om1_croppedwebp.webp" alt="Billede" />
-            </div>
-
-            <div class="nav-auto">
-              <div class="a-b1"></div>
-              <div class="a-b2"></div>
-              <div class="a-b3"></div>
-            </div>
-          </div>
-
-          <div class="nav-m">
-            <label for="radio1" class="m-btn"></label>
-            <label for="radio2" class="m-btn"></label>
-            <label for="radio3" class="m-btn"></label>
-          </div>
-        </div>
-      </section>
-
-      <script type="text/javascript">
-        var counter = 1;
-        document.getElementById("radio" + counter).checked = true;
-
-        setInterval(skiftForHelvede, 1000);
-
-        function skiftForHelvede() {
-          counter++;
-          document.getElementById("radio" + counter).checked = true;
-
-          if (counter > 3) {
-            counter = 1;
-          }
-        }
-      </script>
+      <div id="slidy-container">
+        <figure id="slidy">
+          <img src="img/smoothie.webp" alt="Smoothie" />
+          <img src="img/om1_croppedwebp.webp" alt="Sandwich" />
+          <img src="img/3sndwch_indpak1.webp" alt="Pose" />
+          <img src="img/opbygning.webp" alt="Opbygning af sandwich" />
+        </figure>
+      </div>
 
       <div id="om_os">
-        <div class="container1">
-          <div class="box1">
-            <img src="img/" alt="placeholder" />
-          </div>
-
-          <div class="box2">
-            <img src="img/400x400.svg" alt="placeholder" />
-          </div>
-        </div>
-
         <div class="container2">
           <h1 class="h1">Om os</h1>
 
@@ -117,6 +73,15 @@
             frokostordning hos os, som kan sikre dig og dine medarbejder et
             sundt og velsmagende frokostmåltid hver dag.
           </p>
+        </div>
+        <div class="container1">
+          <div class="box1">
+            <img src="img/kaffe.webp" alt="bagel" />
+          </div>
+
+          <div class="box2">
+            <img src="img/om_os.webp" alt="arbejder" />
+          </div>
         </div>
       </div>
 
@@ -152,11 +117,17 @@
               eller det hele.
             </p>
           </div>
-          <i class="fa-solid fa-heart fa-2x"></i>
+          <div class="center_hjerte">
+            <i class="fa-solid fa-heart fa-2x"></i>
+          </div>
         </div>
         <div>
-          <img class="vision_billede" src="img/400x400.svg" alt="" />
-          <img class="vision_billede" src="img/400x400.svg" alt="" />
+          <img
+            class="vision_billede"
+            src="img/bagel_og_drikkevare.webp"
+            alt=""
+          />
+          <img class="vision_billede" src="img/salat.webp" alt="" />
         </div>
       </div>
     </main>
@@ -218,9 +189,15 @@
       <div class="footer_container">
         <div id="kontrol_rapport">
           <h2>kontrol rapport</h2>
-          <a href="https://www.findsmiley.dk/570006">Smiley :-)</a>
+          <a href="https://www.findsmiley.dk/1272264" target="_blank"
+            ><i
+              class="fa-regular fa-face-smile fa-2x"
+              style="color: #74b168"
+            ></i
+          ></a>
         </div>
       </div>
     </footer>
+    <script src="om.js"></script>
   </body>
 </html>
