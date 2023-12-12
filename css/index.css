@@ -1,9 +1,4 @@
 /*************** Video ***************/
-iframe {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
-}
 
 img,
 video {
@@ -11,6 +6,50 @@ video {
   height: auto;
   display: block;
 }
+
+img {
+  box-shadow: 13px 14px 0px 1px rgba(180, 180, 180, 0.4);
+}
+
+#top_H3_om {
+  background-color: #7cb250;
+  display: block;
+  width: 100%;
+  padding: 10px 10px 10px;
+}
+
+.st {
+  width: 20%;
+  transition: 1s;
+}
+
+.st img {
+  width: 800px;
+  height: 500px;
+}
+
+/******************* Om os *****************/
+
+#om_os {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 30px;
+  width: 100%;
+  margin: 100px 0;
+}
+
+.container1,
+.container2 {
+  flex: 1 0 500px;
+  padding: 0 30px;
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
 .box1 {
   grid-column: 1/3;
   grid-row: 1/3;
@@ -21,7 +60,30 @@ video {
   grid-row: 2/4;
 }
 
-.box1 img,
-.box2 img {
-  box-shadow: 13px 14px 0px 1px rgba(180, 180, 180, 0.4);
+/**************** Luft *******************/
+
+.p_luft {
+  padding-bottom: 20px;
+}
+
+.vision {
+  padding-bottom: 40px;
+}
+
+.h1 {
+  padding-bottom: 10px;
+}
+
+.vision_1 {
+  padding-bottom: 40px;
+  padding-top: 100px;
+}
+
+/*************** Video ***************/
+
+img,
+video {
+  width: 100%;
+  height: auto;
+  display: block;
 }
