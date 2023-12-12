@@ -78,7 +78,7 @@ td :last-child {
 }
 
 .container {
-  flex: 1 0 300px;
+  flex: 1 0 200px;
   padding: 20px;
 }
 
@@ -88,7 +88,7 @@ td :last-child {
 
   border-radius: 10px;
   border: none;
-  flex: 1 0 300px;
+  flex: 1 0 200px;
   background-color: #e7e8e6;
   color: #ff7700;
   font-weight: bolder;
@@ -122,7 +122,7 @@ td :last-child {
 
 .container1,
 .container2 {
-  flex: 1 0 300px;
+  flex: 1 0 200px;
 }
 
 .container2 {
