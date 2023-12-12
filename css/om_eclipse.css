@@ -187,8 +187,8 @@ video {
   }
 
   .vision_test {
-    padding-right: 0;
-    padding-left: 0;
+    /*padding-right: 0;
+    padding-left: 0;*/
   }
   .vision_billede {
     padding-bottom: 40px;
