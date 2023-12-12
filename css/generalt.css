@@ -164,7 +164,7 @@ body {
 }
 
 footer {
-  border-top: solid 12px var(--greenfarve-color);
+  /* border-top: solid 12px var(--greenfarve-color); */
   margin-top: auto;
 
   background-color: #ffc32b;

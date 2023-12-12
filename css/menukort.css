@@ -16,6 +16,10 @@ h1 {
   font-family: "Palanquin", sans-serif;
 }
 
+.top_container {
+  padding: 50px 0;
+}
+
 /***************tabel***************/
 
 table {
@@ -93,7 +97,7 @@ td :last-child {
 #bestil_knap {
   display: flex;
   justify-content: center;
-  padding: 20px 50%;
+  padding: 53px 50%;
   margin-top: 5px;
 }
 
