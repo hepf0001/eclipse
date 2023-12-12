@@ -12,10 +12,22 @@ body {
   box-sizing: border-box;
 }
 
-img {
+img,
+video {
   width: 100%;
   height: auto;
   display: block;
+}
+/*************** Video ***************/
+
+video {
+  z-index: -1;
+  position: relative;
+}
+
+.hamburger-menu {
+  z-index: 100;
+  position: relative;
 }
 
 /******************** fonts ********************/
